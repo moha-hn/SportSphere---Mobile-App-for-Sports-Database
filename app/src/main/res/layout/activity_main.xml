@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sport Name"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/category_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_input"
+        android:layout_marginTop="16dp"
+        android:hint="Category"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/number_of_players_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_input"
+        android:layout_marginTop="16dp"
+        android:hint="Number of Players"
+        android:inputType="number"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/add_sports_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_of_players_input"
+        android:layout_marginTop="16dp"
+        android:text="Add Sport" />
+
+    <Button
+        android:id="@+id/modify_sports_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_sports_button"
+        android:layout_marginTop="16dp"
+        android:text="Modify Sport" />
+
+    <Button
+        android:id="@+id/delete_sports_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modify_sports_button"
+        android:layout_marginTop="16dp"
+        android:text="Delete Sport" />
+
+    <ListView
+        android:id="@+id/sports_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_sports_button"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
